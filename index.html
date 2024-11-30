@@ -4,42 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bible Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Bible Website</h1>
         <nav>
-            <label>
-                <input type="radio" name="version" value="NIV" checked> NIV
-            </label>
-            <label>
-                <input type="radio" name="version" value="NKJV"> NKJV
-            </label>
+            <img src="assets/favicon.ico" alt="Logo">
+            <h1>Bible Explorer</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books/old-testament.html">Old Testament</a></li>
+                <li><a href="books/new-testament.html">New Testament</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </nav>
     </header>
-
     <main>
-        <section id="books">
-            <h2>Bible Books</h2>
-            <ul id="book-list"></ul>
-        </section>
-
-        <section id="chapters">
-            <h2>Chapters</h2>
-            <ul id="chapter-list"></ul>
-        </section>
-
-        <section id="verses">
-            <h2>Verses</h2>
-            <ul id="verse-list"></ul>
-        </section>
+        <h2>Welcome to the Bible Explorer</h2>
+        <p>Select a Testament to explore books, chapters, and verses in NIV and NKJV versions.</p>
     </main>
-
     <footer>
-        <p>&copy; 2024 Bible Website</p>
+        <p>© 2024 Bible Explorer</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-                    </html>
+        </html>
