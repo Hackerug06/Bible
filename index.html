@@ -3,29 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bible Website</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Online Bible - NIV & NKJV</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="assets/favicon.ico" alt="Logo">
-            <h1>Bible Explorer</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="books/old-testament.html">Old Testament</a></li>
-                <li><a href="books/new-testament.html">New Testament</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Welcome to the Bible Explorer</h2>
-        <p>Select a Testament to explore books, chapters, and verses in NIV and NKJV versions.</p>
-    </main>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-icon">
+            <img src="bible-icon.png" alt="Bible Icon" />
+            <span class="nav-title">Bible Website</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#old-testament">Old Testament</a></li>
+            <li><a href="#new-testament">New Testament</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to the Online Bible</h1>
+        <p>Select your preferred Testament and Version to begin exploring the Word of God.</p>
+    </section>
+
+    <!-- Old Testament Section -->
+    <section id="old-testament">
+        <h2>Old Testament</h2>
+        <label for="version-select">Select Version:</label>
+        <select id="version-select">
+            <option value="NIV">NIV</option>
+            <option value="NKJV">NKJV</option>
+        </select>
+        <div id="old-testament-content">
+            <!-- Dynamically load books, chapters, and verses here -->
+        </div>
+    </section>
+
+    <!-- New Testament Section -->
+    <section id="new-testament">
+        <h2>New Testament</h2>
+        <label for="version-select-nt">Select Version:</label>
+        <select id="version-select-nt">
+            <option value="NIV">NIV</option>
+            <option value="NKJV">NKJV</option>
+        </select>
+        <div id="new-testament-content">
+            <!-- Dynamically load books, chapters, and verses here -->
+        </div>
+    </section>
+
+    <!-- APK Download Section -->
+    <section id="download">
+        <h2>Get the Bible App</h2>
+        <p>Download the Bible app for easy access on your mobile device.</p>
+        <a href="bible-app.apk" download class="download-btn">Download APK</a>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Bible Explorer</p>
+        <p>&copy; 2024 Bible Website. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-        </html>
+                </html>
