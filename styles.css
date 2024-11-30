@@ -1,4 +1,3 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,30 +9,18 @@ header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-nav button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: white;
-    border: 1px solid #4CAF50;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#version-toggle {
-    display: flex;
+    justify-content: center;
     gap: 10px;
-    align-items: center;
+    margin: 10px 0;
+}
+
+nav label {
+    cursor: pointer;
 }
 
 main {
@@ -57,36 +44,25 @@ ul li {
     cursor: pointer;
 }
 
-/* Media Queries */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
     }
 
-    nav button {
+    nav label {
         font-size: 0.9rem;
     }
 
     ul li {
         font-size: 0.9rem;
         padding: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav {
-        flex-direction: column;
-    }
-
-    header h1 {
-        font-size: 1.2rem;
-    }
-
-    nav button {
-        font-size: 0.8rem;
-    }
-
-    ul li {
-        font-size: 0.8rem;
     }
 }
